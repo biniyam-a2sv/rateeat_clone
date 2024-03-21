@@ -9,18 +9,18 @@ const Hero = ({
   listUser = [
     {
       name: "Users",
-      number: "390",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
+      number: "300",
+      icon: "/assets/Icon/user.svg",
     },
     {
-      name: "Locations",
-      number: "20",
-      icon: "/assets/Icon/gridicons_location.svg",
+      name: "Restaurants",
+      number: "200",
+      icon: "/assets/Icon/map_pin.svg",
     },
     {
-      name: "Server",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
+      name: "Reviews",
+      number: "1,400",
+      icon: "assets/Icon/star_rating.svg",
     },
   ],
 }) => {
@@ -36,23 +36,26 @@ const Hero = ({
             className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                Want anything to be easy with <strong>LaslesVPN</strong>.
+              <h1 className="text-3xl lg:text-2xl xl:text-1xl font-medium text-black-600 leading-normal">
+              PERFECTING YOUR DINING EXPERIENCE <br/> <strong className="text-8xl font-black">RateEat</strong>.
               </h1>
               <p className="text-black-500 mt-4 mb-6">
-                Provide a network for all your needs with ease and fun using
-                LaslesVPN discover interesting features from us.
-              </p>
+              RateEat is your ultimate guide for authentic dining experiences, 
+              honest reviews, and personalized recommendations.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=org.a2sv.rateeat_mobile">
               <ButtonPrimary>Get Started</ButtonPrimary>
+
+            </a>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
                 <Image
-                  src="/assets/Illustration1.png"
-                  alt="VPN Illustrasi"
+                  src="/assets/Illustration_1.png"
+                  alt="RateEat Illustration"
                   quality={100}
-                  width={612}
-                  height={383}
+                  width={402}
+                  height={403}
                   layout="responsive"
                 />
               </motion.div>
